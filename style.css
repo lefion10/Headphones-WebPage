@@ -114,3 +114,36 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: aquamarine;
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 img {
+  width: 80%;
+}
+
+.color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(aquamarine, white);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateX(200px);
+}
