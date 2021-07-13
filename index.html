@@ -12,14 +12,19 @@
       <div class="navbar">
         <img src="imgs/logo.png" alt="logo" class="logo" />
         <nav>
-          <ul>
+          <ul id="menu">
             <li><a href="">Over-ear</a></li>
             <li><a href="">On-ear</a></li>
             <li><a href="">In-ear</a></li>
             <li><a href="">Earbuds</a></li>
           </ul>
         </nav>
-        <img src="imgs/menu.png" alt="menu" class="menu" />
+        <img
+          src="imgs/menu.png"
+          alt="menu"
+          class="menu"
+          onclick="togglemenu()"
+        />
       </div>
 
       <div class="row">
@@ -33,8 +38,32 @@
         <div class="col-2">
           <img src="imgs/headphones.png" alt="" class="headphones" />
           <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="imgs/add.png" alt="" />
+            <p><small>Add to Cart</small></p>
+          </div>
         </div>
       </div>
+
+      <div class="socialmedia">
+        <img src="imgs/fb.png" alt="" />
+        <img src="imgs/ig.png" alt="" />
+        <img src="imgs/tw.png" alt="" />
+      </div>
     </div>
+
+    <script>
+      var menu = document.getElementById("menu");
+
+      menu.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menu.style.maxHeight == "0px") {
+          menu.style.maxHeight = "130px";
+        } else {
+          menu.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

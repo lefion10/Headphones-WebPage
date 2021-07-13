@@ -28,6 +28,7 @@
 .menu {
   width: 50px;
   cursor: pointer;
+  display: none;
 }
 
 nav {
@@ -146,4 +147,75 @@ button:hover {
   width: 100%;
   z-index: -1;
   transform: translateX(200px);
+}
+
+.add-btn {
+  margin: 50px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.socialmedia img {
+  height: 40px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.socialmedia {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    margin-top: 5%;
+    width: 100%;
+    background: aquamarine;
+    position: absolute;
+    top: 75px;
+    right: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: white;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  #menu {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 30%;
+  }
+
+  .color-box {
+    transform: translateX(75px);
+  }
+
+  .col-1 {
+    flex-basis: 100%;
+  }
 }
